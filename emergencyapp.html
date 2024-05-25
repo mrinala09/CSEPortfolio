@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Emergency App Project</title>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f1f1f1;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 1400px;
+        margin: auto;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+    .column {
+        padding: 10px;
+        flex: 1;
+        min-width: 300px; /* Ensures a minimum size for columns */
+    }
+    .card {
+        background-color: white;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .card-content {
+        padding: 20px;
+    }
+    .section-title {
+        font-size: 1.5em;
+        margin-bottom: 20px;
+        color: teal;
+    }
+    .portfolio-button {
+        background-color: teal;
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .portfolio-button:hover {
+        background-color: darkcyan;
+        transform: scale(1.05);
+    }
+    .portfolio-button:active {
+        background-color: lightseagreen;
+        transform: scale(1);
+    }
+    .image-section {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        margin-top: 40px;
+    }
+    .image-section img {
+        max-width: 200px; /* Smaller size for the images */
+        height: auto;
+        margin: 10px;
+    }
+    .image-section-title {
+        font-size: 1.2em;
+        margin-top: 10px;
+        color: teal;
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <!-- Home Page Section -->
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h5 class="section-title">Home Page</h5>
+            <p>Home page that leads you to sign up/login. After doing either you get redirected to main page. The main page allows you to send location and text to several options, and specify a safe area depending on the situation. This app is mainly for EHS students, staff, and parents who may need guidance during emergency procedures.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sign-Up Section -->
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h5 class="section-title">Sign-Up</h5>
+            <p>Make your account: Normal (student) sign-up or Admin login. 
+            When you click sign-up, you will be prompted to either keep the given password (cake), or make your own. 
+            Will redirect them to the main page. 
+            If you try to sign-up as an admin, you will be prompted to enter a selected personal password to get the account. 
+            The password for admins is “Carr0t C^ke”.
+            Will direct them to the admin page, which allows you to see user data.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Login Section -->
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h5 class="section-title">Login</h5>
+            <p>If you already have an account, click “Have an account?” to be prompted to the login page. 
+            In order to login, you will need to have done the sign-in steps already. 
+            If you signed-up as a student, you just have to enter the same username and password. 
+            You should be redirected to the main page if you typed in your information correctly.
+            If you signed-up as an admin, type in your chosen username plus the “Carr0t C^ke” password. 
+            You can go to the main or admin page.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Main Page Section -->
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h5 class="section-title">Main Page</h5>
+            <p>If you login as a student, you will be directed here. Four Main Features:
+            <ul>
+              <li>Dial 911</li>
+              <li>Send a text to selected people</li>
+              <li>Indicate safe area to selected people</li>
+              <li>Send location to selected people</li>
+            </ul>
+            Sending your location is automatic with the other two options. Type your chosen text and chosen check boxes, then click send to deliver the message.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Admin Screen Section -->
+    <div class="row">
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h5 class="section-title">Admin Screen</h5>
+            <p>If you login as an admin, you will be directed here. Four Main Features:
+            <ul>
+              <li>View User messages</li>
+              <li>View User data: (Username and Password)</li>
+              <li>Log Out</li>
+              <li>Go to Map to view more features</li>
+            </ul>
+            User messages will be shown for the history of the usage of this app. You will be able to view user data and admin data in separate lines for the sake of organization.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Image Gallery Section -->
+    <div class="row">
+      <div class="column">
+        <div class="image-section">
+          <img src="home.png" alt="Home Page">
+          <div class="image-section-title">Home Page</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="image-section">
+          <img src="main.png" alt="Main Page">
+          <div class="image-section-title">Main Page</div>
+        </div>
+      </div>
+      <div class="column">
+        <div class="image-section">
+          <img src="admin.jpeg" alt="Admin Screen">
+          <div class="image-section-title">Admin Screen</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

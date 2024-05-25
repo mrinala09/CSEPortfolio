@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Personal Portfolio</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <style>
+    html, body, h1, h2, h3, h4, h5, h6 {
+      font-family: "Roboto", sans-serif;
+    }
+
+    body {
+      background-color: #f1f1f1;
+      margin: 0;
+      padding: 20px;
+    }
+
+    .container {
+      max-width: 1400px;
+      margin: auto;
+    }
+
+    .row {
+      display: flex;
+      flex-wrap: wrap;
+      margin: -10px;
+    }
+
+    .column {
+      padding: 10px;
+    }
+
+    .left-column {
+      flex: 1;
+      max-width: 33.33%;
+    }
+
+    .right-column {
+      flex: 2;
+      max-width: 66.67%;
+    }
+
+    .card {
+      background-color: white;
+      margin-bottom: 20px;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+      border-radius: 5px;
+      overflow: hidden;
+    }
+
+    .card img {
+      width: 100%;
+    }
+
+    .card h2, .card h5 {
+      margin: 0;
+    }
+
+    .card h2 {
+      padding: 10px;
+      background: rgba(0, 0, 0, 0.5);
+      color: white;
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      right: 0;
+    }
+
+    .card-content {
+      padding: 20px;
+    }
+
+    .icon {
+      margin-right: 10px;
+    }
+
+    .progress-bar {
+      background-color: #f1f1f1;
+      border-radius: 25px;
+      overflow: hidden;
+      margin-bottom: 10px;
+    }
+
+    .progress-bar div {
+      background-color: teal;
+      text-align: center;
+      color: white;
+      padding: 3px 0;
+      border-radius: 25px;
+    }
+
+    footer {
+      background-color: teal;
+      color: white;
+      text-align: center;
+      padding: 10px 0;
+      margin-top: 20px;
+      border-radius: 5px;
+    }
+
+    footer i {
+      margin: 0 5px;
+      cursor: pointer;
+    }
+    
+    h2 {
+      font-size: 2em;
+      margin-bottom: 20px;
+    }
+
+    h5 {
+      font-size: 1.8em;
+      margin-bottom: 10px;
+    }
+
+    .portfolio-button {
+      background-color: teal;
+      color: white;
+      padding: 15px 25px;
+      border: none;
+      border-radius: 5px;
+      font-size: 1.2em;
+      cursor: pointer;
+      transition: background-color 0.3s, transform 0.3s;
+    }
+
+    .portfolio-button:hover {
+      background-color: darkcyan;
+      transform: scale(1.05);
+    }
+
+    .portfolio-button:active {
+      background-color: lightseagreen;
+      transform: scale(1);
+    
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <footer>
+      <a href="resume.html" target="_blank">
+        <button class="portfolio-button">Portfolio</button>
+      </a>
+      <a href="projects.html" target="_blank">
+        <button class="portfolio-button">Projects</button>
+      </a>
+    </footer>
+  </div>
+    
+
+  <div class="container">
+
+    <div class="row">
+
+      <div class="column left-column">
+        <div class="card">
+          <div style="position:relative;">
+            <img src="IMG_3266.jpeg" alt="RONALDDDDDD">
+            <h2>Mrinal Agarwal</h2>
+          </div>
+          <div class="card-content">
+            <p><i class="fa fa-briefcase fa-fw icon"></i>Student</p>
+            <p><i class="fa fa-home fa-fw icon"></i>Dublin, California</p>
+            <p><i class="fa fa-envelope fa-fw icon"></i>smmrinal2009@gmail.com</p>
+            <p><i class="fa fa-phone fa-fw icon"></i>510-971-0053</p>
+            <hr>
+            <p class="w3-large"><b><i class="fa fa-asterisk fa-fw icon"></i>Skills</b></p>
+            <p>Python</p>
+            <div class="progress-bar"><div style="width:35%">35%</div></div>
+            <p>Competitive Math</p>
+            <div class="progress-bar"><div style="width:75%">75%</div></div>
+            <p>Drawing</p>
+            <div class="progress-bar"><div style="width:60%">60%</div></div>
+            <p>Debate</p>
+            <div class="progress-bar"><div style="width:55%">55%</div></div>
+            <br>
+            <p class="w3-large"><b><i class="fa fa-globe fa-fw icon"></i>Languages</b></p>
+            <p>English</p>
+            <div class="progress-bar"><div style="width:100%"></div></div>
+            <p>Spanish</p>
+            <div class="progress-bar"><div style="width:30%"></div></div>
+            <p>Hindi</p>
+            <div class="progress-bar"><div style="width:90%"></div></div>
+            <br>
+          </div>
+        </div>
+      </div>
+
+      <!-- Right Column -->
+      <div class="column right-column">
+        <div class="card">
+          <div class="card-content">
+            <h5>Career Goals</h5>
+            <p>My career ahead of me is something that some people might find ordinary, but to me, it is everything I've worked for in my life. I hope to pursue a career in the field of computer science and mathematics. I am very interested in this field because I believe that it is a field that will continue to grow and develop, and I have always been appealed by the topics in this field, as sometimes they come as a surprise and sometimes just stare at me in my face, waiting to be discovered. My goal is to make it USAJMO, and gold USACO. I am starting to deepen my knowledge in Python, HTML, and Java, and wish to learn more in the field of computer science, and prepping for AIME (The path to get into USAJMO with the AMC Competitive Math Series).</p>
+            <p>I still remember the first time I heard the word "coding", from my dad, and I immediately started asking questions. As soon as I learned that coding was everywhere, and that it was the basis of technology, I was hooked. I have always been fascinated by the idea of creating things, and I hope to one day be able to create my own tool that will help the people of this world.</p>
+            <p>Alongside my fascination with the world of technology, the first time I saw numbers flowing on my paper I was amazed by the new realities they would create. I could go into this little world where no one could judge me for who I was, and it was just me, my pen, my paper, and these little numbers and symbols. Every time I got a step closer to solving a problem, a realization hit me. What's the point of all of this? Then I realized, that sometimes life isn't just an endless void of meaning, but rather sometimes you just have to do what you love without fearing what's next. This has stayed with me my whole life, and I hope to continue my love for computer science and mathematics.</p>
+          </div>
+        </div>
+
+        <div class="card">
+          <div class="card-content">
+            <h5>Qualities</h5>
+            <p>To describe myself with a few words I am; Ambitious, Creative, Open-Minded, Persistent, Responsible, Self-Motivated, Team-Player, and am always looking forward to getting better at what I do. I have used these skills not only to collaborate with my peers, but also take initiatives of my own in order to pursue my goals.</p>
+            <h5>Achievements</h5>
+            <p>I am currently the President of the Competitive Math and Chess club, and the Vice-President of the Badminton club and the EHS ISA. All of these clubs incorporate a special part of my identity, and they are things that mean the world to me. Throughout my life, I've attempted many things, from soccer, to skating, and even swimming and been a part of many different types of societies. But I have decided on these 4 things as they are the ones that I enjoy the most, and the ones that allow me to find a part of myself in.</p>
+          </div>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+
+  <footer>
+    
+  </footer>
+
+</body>
+
+</html>

@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Recipe App Project</title>
+<link rel='stylesheet' href='https://fonts.googleapis.com/css?family=Roboto'>
+<style>
+    body {
+        font-family: "Roboto", sans-serif;
+        background-color: #f1f1f1;
+        margin: 0;
+        padding: 20px;
+    }
+    .container {
+        max-width: 1400px;
+        margin: auto;
+    }
+    .row {
+        display: flex;
+        flex-wrap: wrap;
+        margin: -10px;
+    }
+    .column {
+        padding: 10px;
+    }
+    .left-column {
+        flex: 1;
+        max-width: 33.33%;
+    }
+    .right-column {
+        flex: 2;
+        max-width: 66.67%;
+    }
+    .card {
+        background-color: white;
+        margin-bottom: 20px;
+        box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+    .card img {
+        width: 100%;
+    }
+    .card h2, .card h5 {
+        margin: 0;
+    }
+    .card h2 {
+        padding: 10px;
+        background: rgba(0, 0, 0, 0.5);
+        color: white;
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+    }
+    .card-content {
+        padding: 20px;
+    }
+    .icon {
+        margin-right: 10px;
+    }
+    .section-title {
+        font-size: 2em;
+        margin-bottom: 20px;
+        color: teal;
+    }
+    .portfolio-button {
+        background-color: teal;
+        color: white;
+        padding: 15px 25px;
+        border: none;
+        border-radius: 5px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s, transform 0.3s;
+    }
+    .portfolio-button:hover {
+        background-color: darkcyan;
+        transform: scale(1.05);
+    }
+    .portfolio-button:active {
+        background-color: lightseagreen;
+        transform: scale(1);
+    }
+</style>
+</head>
+<body>
+  <div class="container">
+    <div class="row">
+      <!-- Problem Section -->
+      <div class="column">
+        <div class="card">
+          <div class="card-content">
+            <h5 class="section-title">Problem</h5>
+            <p>People struggle with cooking and are unable to follow recipes with long and complicated instructions, or are unable to decide on what to make with the items they have. This leads many people to order in rather than using a healthier alternative. With this app, we provide a perfect solution to this problem.</p>
+            <p>This problem doesn't just affect everyday adults, but students that go to school too. Often students need to make lunch for themselves in the morning to take to school. But they usually have trouble with this or are not sure how to cook. Without a proper and nutritious lunch, students are not able to perform properly in school and this causes a lot of problems for them making their day hard. Students most being adolescents, want something tasty, but it is best if it is also very nutritious.</p>
+            <p>Though some solutions already exist such as a manual physical cookbook, those are very inefficient and require effort and time to look through them and find your recipe. We want to make something that is easy for the user to use and requires minimal effort and provides instructions and fulfills cravings.</p>
+            <p>
+                Pictures are in documentation, replit won't let me upload them.
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="row">
+      <div class="column left-column">
+        <div class="card">
+          <div style="position:relative;">
+            <h2>Solution Planning</h2>
+          </div>
+          <div class="card-content">
+            <h5 class="section-title">Solution Planning</h5>
+            <p><strong>Brainstorming:</strong> Our General Idea was to make a program that was essentially a CookBook, except the user could define the ingredients they wanted to use.</p>
+            <p><strong>API Databases/Pulling Data:</strong> Now we had an Idea on what to create, we first need a Database that contains all the recipes and ingredients, and a code that pulls recipes based on the user input.</p>
+            <p><strong>UI with MVC and Flask:</strong> Our Final step was to create the UI for the user, since we are creating a web program, we need to use Flask and MVC to create a website and access servers.</p>
+            <p><strong>Recipe App:</strong> Our final product is our recipe app that is a web-based program where a user can input ingredients they have and they will receive multiple recipes on what they can cook with it.</p>
+          </div>
+        </div>
+      </div>
+      <div class="column right-column">
+        <div class="card">
+          <div style="position:relative;">
+            <h2>Solution Summary</h2>
+          </div>
+          <div class="card-content">
+            <h5 class="section-title">Solution Summary</h5>
+            <p><strong>Sprint 1:</strong> Find an API Database and set it up, luckily a web API that contained a food and recipe database already existed, so we used that as our basis.</p>
+            <p><strong>Sprint 2:</strong> Set up a function structure. We are going to make this program using Object Oriented Programming, and connect it all with the API database.</p>
+            <p><strong>Sprint 3:</strong> Program the functions, Main: asks the user to list ingredients they want, fetch_recipe: fetches the recipes and the ingredients needed from the Edamam API, Display_recipe: Displays the dish, the index number, and the ingredients needed, and a recipe link.</p>
+            <p><strong>Sprint 4:</strong> Create a User Interface using Flask and MVC so that this program can be run on a website.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

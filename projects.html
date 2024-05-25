@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project Portfolio</title>
+    <style>
+        body {
+            font-family: 'Roboto', sans-serif;
+            background-color: #f9f9f9;
+            color: #333;
+            margin: 0;
+            padding: 0;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 20px;
+            padding: 20px;
+            background-color: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 10px;
+        }
+
+        h1 {
+            font-size: 2.5em;
+            text-align: center;
+            color: #005266;
+            margin-bottom: 20px;
+        }
+
+        .project-section {
+            margin-bottom: 40px;
+        }
+
+        .project-section h2 {
+            font-size: 2em;
+            color: #007b8a;
+            margin-bottom: 10px;
+        }
+
+        .project {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .project-card {
+            flex: 1;
+            min-width: 300px;
+            background-color: #f1f1f1;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        .project-card h3 {
+            font-size: 1.5em;
+            color: #005266;
+            margin-bottom: 10px;
+        }
+
+        .project-card p {
+            font-size: 1em;
+            line-height: 1.6;
+            color: #555;
+        }
+
+        .project-card a {
+            display: inline-block;
+            margin-top: 10px;
+            color: #007b8a;
+            text-decoration: none;
+            font-weight: bold;
+        }
+
+        .project-card a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>My Projects</h1>
+
+        <div class="project-section">
+            <h2>Recipes of Tomorrow</h2>
+            <div class="project">
+                <div class="project-card">
+                    <p>Our Final Product was ultimately our cookbook app! However, instead of being like a traditional cookbook that a user can look at a database for recipes. Our program takes a user input for any ingredients they desire, there is no limit to the specifics of the ingredients and the amount they can have. Then our product displays recipes along with instructions for it. Making the search significantly more efficient. This is a web app, meaning there is URL for it and our program runs on a website that can be accessed by anyone. Hence the use of a UI with flask and mvc.
+</p>
+                    <a href="recipes.html">View More</a>
+                </div>
+            </div>
+        </div>
+
+        <div class="project-section">
+            <h2>Emergency App</h2>
+            <div class="project">
+                <div class="project-card">
+                    <ul>
+                        <li>Lately at Cake Preparatory School students and staff have expressed concerns about safety because of recent incidents in the community</li>
+                        <li>In order to counteract this concern the school has enlisted a start-up company (us) to make a safety app</li>
+                        <li>They want the app to include:
+</li>
+                            <ul>
+                                <li>Admin and student profiles</li>
+                                <li>Sign-up and Login Page</li>
+                                <li>Usability on and off campus</li>
+                                <li>Location sharing</li>
+                                <li>Ability to pick who you want to share it too</li>
+                            </ul>
+                        </li>
+                    </ul>
+                    <a href="emergencyapp.html">View More</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
